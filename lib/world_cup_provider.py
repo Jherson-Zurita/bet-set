@@ -162,53 +162,90 @@ def _real_world_cup_fixture() -> list[dict]:
         {"id": "wc26_g2_m24", "home_team": "Eslovaquia", "away_team": "Panamá", "commence_time": t(12, 2), "group": "L", "stage": "Group", "matchday": 2, "venue": "BC Place, Vancouver"},
 
         # ============ JORNADA 3 (25-27 junio) ============
+        # Día 14 — 25 jun (Grupos A, B, C, D)
         {"id": "wc26_g3_m1", "home_team": "México", "away_team": "Sudáfrica", "commence_time": t(14, 23), "group": "A", "stage": "Group", "matchday": 3, "venue": "Estadio Azteca, CDMX"},
         {"id": "wc26_g3_m2", "home_team": "Suecia", "away_team": "Corea del Sur", "commence_time": t(14, 23), "group": "A", "stage": "Group", "matchday": 3, "venue": "Estadio Akron, GDL"},
         {"id": "wc26_g3_m3", "home_team": "Canadá", "away_team": "Irak", "commence_time": t(14, 2), "group": "B", "stage": "Group", "matchday": 3, "venue": "BMO Field, Toronto"},
         {"id": "wc26_g3_m4", "home_team": "Gales", "away_team": "Irán", "commence_time": t(14, 2), "group": "B", "stage": "Group", "matchday": 3, "venue": "BC Place, Vancouver"},
+        {"id": "wc26_g3_m5", "home_team": "Brasil", "away_team": "Haití", "commence_time": t(14, 23), "group": "C", "stage": "Group", "matchday": 3, "venue": "Hard Rock Stadium, Miami"},
+        {"id": "wc26_g3_m6", "home_team": "Marruecos", "away_team": "Escocia", "commence_time": t(14, 23), "group": "C", "stage": "Group", "matchday": 3, "venue": "MetLife Stadium, NJ"},
+        {"id": "wc26_g3_m7", "home_team": "Estados Unidos", "away_team": "Ucrania", "commence_time": t(14, 2), "group": "D", "stage": "Group", "matchday": 3, "venue": "SoFi Stadium, LA"},
+        {"id": "wc26_g3_m8", "home_team": "Paraguay", "away_team": "Australia", "commence_time": t(14, 2), "group": "D", "stage": "Group", "matchday": 3, "venue": "Levi's Stadium, SF"},
 
-        {"id": "wc26_g3_m5", "home_team": "Brasil", "away_team": "Haití", "commence_time": t(15, 23), "group": "C", "stage": "Group", "matchday": 3, "venue": "Hard Rock Stadium, Miami"},
-        {"id": "wc26_g3_m6", "home_team": "Marruecos", "away_team": "Escocia", "commence_time": t(15, 23), "group": "C", "stage": "Group", "matchday": 3, "venue": "MetLife Stadium, NJ"},
-        {"id": "wc26_g3_m7", "home_team": "Estados Unidos", "away_team": "Ucrania", "commence_time": t(15, 2), "group": "D", "stage": "Group", "matchday": 3, "venue": "SoFi Stadium, LA"},
-        {"id": "wc26_g3_m8", "home_team": "Paraguay", "away_team": "Australia", "commence_time": t(15, 2), "group": "D", "stage": "Group", "matchday": 3, "venue": "Levi's Stadium, SF"},
+        # Día 15 — 26 jun (Grupos E, F, G, H)
+        {"id": "wc26_g3_m9", "home_team": "Alemania", "away_team": "Ecuador", "commence_time": t(15, 23), "group": "E", "stage": "Group", "matchday": 3, "venue": "AT&T Stadium, Dallas"},
+        {"id": "wc26_g3_m10", "home_team": "Curazao", "away_team": "Costa de Marfil", "commence_time": t(15, 23), "group": "E", "stage": "Group", "matchday": 3, "venue": "NRG Stadium, Houston"},
+        {"id": "wc26_g3_m11", "home_team": "Países Bajos", "away_team": "Polonia", "commence_time": t(15, 2), "group": "F", "stage": "Group", "matchday": 3, "venue": "MetLife Stadium, NJ"},
+        {"id": "wc26_g3_m12", "home_team": "Japón", "away_team": "Túnez", "commence_time": t(15, 2), "group": "F", "stage": "Group", "matchday": 3, "venue": "AT&T Stadium, Dallas"},
+        {"id": "wc26_g3_m13", "home_team": "Bélgica", "away_team": "Austria", "commence_time": t(15, 23), "group": "G", "stage": "Group", "matchday": 3, "venue": "SoFi Stadium, LA"},
+        {"id": "wc26_g3_m14", "home_team": "Egipto", "away_team": "Argelia", "commence_time": t(15, 23), "group": "G", "stage": "Group", "matchday": 3, "venue": "BC Place, Vancouver"},
+        {"id": "wc26_g3_m15", "home_team": "España", "away_team": "Uruguay", "commence_time": t(15, 2), "group": "H", "stage": "Group", "matchday": 3, "venue": "Hard Rock Stadium, Miami"},
+        {"id": "wc26_g3_m16", "home_team": "Cabo Verde", "away_team": "Arabia Saudita", "commence_time": t(15, 2), "group": "H", "stage": "Group", "matchday": 3, "venue": "NRG Stadium, Houston"},
 
-        {"id": "wc26_g3_m9", "home_team": "Alemania", "away_team": "Ecuador", "commence_time": t(16, 23), "group": "E", "stage": "Group", "matchday": 3, "venue": "AT&T Stadium, Dallas"},
-        {"id": "wc26_g3_m10", "home_team": "Curazao", "away_team": "Costa de Marfil", "commence_time": t(16, 23), "group": "E", "stage": "Group", "matchday": 3, "venue": "NRG Stadium, Houston"},
-        {"id": "wc26_g3_m11", "home_team": "Países Bajos", "away_team": "Polonia", "commence_time": t(16, 2), "group": "F", "stage": "Group", "matchday": 3, "venue": "MetLife Stadium, NJ"},
-        {"id": "wc26_g3_m12", "home_team": "Japón", "away_team": "Túnez", "commence_time": t(16, 2), "group": "F", "stage": "Group", "matchday": 3, "venue": "AT&T Stadium, Dallas"},
+        # Día 16 — 27 jun (Grupos I, J, K, L)
+        {"id": "wc26_g3_m17", "home_team": "Francia", "away_team": "Ghana", "commence_time": t(16, 23), "group": "I", "stage": "Group", "matchday": 3, "venue": "MetLife Stadium, NJ"},
+        {"id": "wc26_g3_m18", "home_team": "Noruega", "away_team": "Senegal", "commence_time": t(16, 23), "group": "I", "stage": "Group", "matchday": 3, "venue": "BMO Field, Toronto"},
+        {"id": "wc26_g3_m19", "home_team": "Argentina", "away_team": "Nueva Zelanda", "commence_time": t(16, 2), "group": "J", "stage": "Group", "matchday": 3, "venue": "Hard Rock Stadium, Miami"},
+        {"id": "wc26_g3_m20", "home_team": "Croacia", "away_team": "Dinamarca", "commence_time": t(16, 2), "group": "J", "stage": "Group", "matchday": 3, "venue": "SoFi Stadium, LA"},
+        {"id": "wc26_g3_m21", "home_team": "Portugal", "away_team": "Rumania", "commence_time": t(16, 23), "group": "K", "stage": "Group", "matchday": 3, "venue": "Levi's Stadium, SF"},
+        {"id": "wc26_g3_m22", "home_team": "Colombia", "away_team": "Macedonia del Norte", "commence_time": t(16, 23), "group": "K", "stage": "Group", "matchday": 3, "venue": "AT&T Stadium, Dallas"},
+        {"id": "wc26_g3_m23", "home_team": "Inglaterra", "away_team": "Panamá", "commence_time": t(16, 2), "group": "L", "stage": "Group", "matchday": 3, "venue": "NRG Stadium, Houston"},
+        {"id": "wc26_g3_m24", "home_team": "Suiza", "away_team": "Eslovaquia", "commence_time": t(16, 2), "group": "L", "stage": "Group", "matchday": 3, "venue": "BC Place, Vancouver"},
 
-        {"id": "wc26_g3_m13", "home_team": "Bélgica", "away_team": "Austria", "commence_time": t(17, 23), "group": "G", "stage": "Group", "matchday": 3, "venue": "SoFi Stadium, LA"},
-        {"id": "wc26_g3_m14", "home_team": "Egipto", "away_team": "Argelia", "commence_time": t(17, 23), "group": "G", "stage": "Group", "matchday": 3, "venue": "BC Place, Vancouver"},
-        {"id": "wc26_g3_m15", "home_team": "España", "away_team": "Uruguay", "commence_time": t(17, 2), "group": "H", "stage": "Group", "matchday": 3, "venue": "Hard Rock Stadium, Miami"},
-        {"id": "wc26_g3_m16", "home_team": "Cabo Verde", "away_team": "Arabia Saudita", "commence_time": t(17, 2), "group": "H", "stage": "Group", "matchday": 3, "venue": "NRG Stadium, Houston"},
+        # ============ DIECISEISAVOS DE FINAL / ROUND OF 32 (28 jun - 3 jul) ============
+        # Día 17 — 28 jun
+        {"id": "wc26_r32_m1", "home_team": "España", "away_team": "Senegal", "commence_time": t(17, 18), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "SoFi Stadium, LA"},
+        {"id": "wc26_r32_m2", "home_team": "México", "away_team": "Ecuador", "commence_time": t(17, 21), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "Estadio Azteca, CDMX"},
+        
+        # Día 18 — 29 jun (HOY en simulación)
+        {"id": "wc26_r32_m3", "home_team": "Argentina", "away_team": "Estados Unidos", "commence_time": t(18, 18), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "MetLife Stadium, NJ"},
+        {"id": "wc26_r32_m4", "home_team": "Francia", "away_team": "Bélgica", "commence_time": t(18, 21), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "Hard Rock Stadium, Miami"},
+        
+        # Día 19 — 30 jun (MAÑANA)
+        {"id": "wc26_r32_m5", "home_team": "Brasil", "away_team": "Portugal", "commence_time": t(19, 18), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "AT&T Stadium, Dallas"},
+        {"id": "wc26_r32_m6", "home_team": "Alemania", "away_team": "Países Bajos", "commence_time": t(19, 21), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "NRG Stadium, Houston"},
+        
+        # Día 20 — 1 jul
+        {"id": "wc26_r32_m7", "home_team": "Inglaterra", "away_team": "Colombia", "commence_time": t(20, 18), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "BMO Field, Toronto"},
+        {"id": "wc26_r32_m8", "home_team": "Uruguay", "away_team": "Italia", "commence_time": t(20, 21), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "Levi's Stadium, SF"},
 
-        {"id": "wc26_g3_m17", "home_team": "Francia", "away_team": "Ghana", "commence_time": t(18, 23), "group": "I", "stage": "Group", "matchday": 3, "venue": "MetLife Stadium, NJ"},
-        {"id": "wc26_g3_m18", "home_team": "Noruega", "away_team": "Senegal", "commence_time": t(18, 23), "group": "I", "stage": "Group", "matchday": 3, "venue": "BMO Field, Toronto"},
-        {"id": "wc26_g3_m19", "home_team": "Argentina", "away_team": "Nueva Zelanda", "commence_time": t(18, 2), "group": "J", "stage": "Group", "matchday": 3, "venue": "Hard Rock Stadium, Miami"},
-        {"id": "wc26_g3_m20", "home_team": "Croacia", "away_team": "Dinamarca", "commence_time": t(18, 2), "group": "J", "stage": "Group", "matchday": 3, "venue": "SoFi Stadium, LA"},
+        # Día 21 — 2 jul
+        {"id": "wc26_r32_m9", "home_team": "Croacia", "away_team": "Suiza", "commence_time": t(21, 18), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "BC Place, Vancouver"},
+        {"id": "wc26_r32_m10", "home_team": "Marruecos", "away_team": "Japón", "commence_time": t(21, 21), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "NRG Stadium, Houston"},
 
-        {"id": "wc26_g3_m21", "home_team": "Portugal", "away_team": "Rumania", "commence_time": t(19, 23), "group": "K", "stage": "Group", "matchday": 3, "venue": "Levi's Stadium, SF"},
-        {"id": "wc26_g3_m22", "home_team": "Colombia", "away_team": "Macedonia del Norte", "commence_time": t(19, 23), "group": "K", "stage": "Group", "matchday": 3, "venue": "AT&T Stadium, Dallas"},
-        {"id": "wc26_g3_m23", "home_team": "Inglaterra", "away_team": "Panamá", "commence_time": t(19, 2), "group": "L", "stage": "Group", "matchday": 3, "venue": "NRG Stadium, Houston"},
-        {"id": "wc26_g3_m24", "home_team": "Suiza", "away_team": "Eslovaquia", "commence_time": t(19, 2), "group": "L", "stage": "Group", "matchday": 3, "venue": "BC Place, Vancouver"},
+        # Día 22 — 3 jul
+        {"id": "wc26_r32_m11", "home_team": "Dinamarca", "away_team": "Corea del Sur", "commence_time": t(22, 18), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "MetLife Stadium, NJ"},
+        {"id": "wc26_r32_m12", "home_team": "Canadá", "away_team": "Austria", "commence_time": t(22, 21), "group": None, "stage": "Round of 32", "matchday": 4, "venue": "SoFi Stadium, LA"},
 
-        # ============ OCTAVOS DE FINAL (28 jun - 3 jul) ============
-        {"id": "wc26_r16_m1", "home_team": "1A", "away_team": "2B", "commence_time": t(20, 21), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "NRG Stadium, Houston", "is_tbd": True},
-        {"id": "wc26_r16_m2", "home_team": "1B", "away_team": "2A", "commence_time": t(20, 1), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "Estadio Azteca, CDMX", "is_tbd": True},
-        {"id": "wc26_r16_m3", "home_team": "1C", "away_team": "2D", "commence_time": t(21, 23), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "MetLife Stadium, NJ", "is_tbd": True},
-        {"id": "wc26_r16_m4", "home_team": "1D", "away_team": "2C", "commence_time": t(21, 2), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "SoFi Stadium, LA", "is_tbd": True},
-        {"id": "wc26_r16_m5", "home_team": "1E", "away_team": "2F", "commence_time": t(22, 23), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "Hard Rock Stadium, Miami", "is_tbd": True},
-        {"id": "wc26_r16_m6", "home_team": "1F", "away_team": "2E", "commence_time": t(22, 2), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "AT&T Stadium, Dallas", "is_tbd": True},
-        {"id": "wc26_r16_m7", "home_team": "1G", "away_team": "2H", "commence_time": t(23, 23), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "BMO Field, Toronto", "is_tbd": True},
-        {"id": "wc26_r16_m8", "home_team": "1H", "away_team": "2G", "commence_time": t(23, 2), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "Levi's Stadium, SF", "is_tbd": True},
-        {"id": "wc26_r16_m9", "home_team": "1I", "away_team": "2J", "commence_time": t(24, 23), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "BC Place, Vancouver", "is_tbd": True},
-        {"id": "wc26_r16_m10", "home_team": "1J", "away_team": "2I", "commence_time": t(24, 2), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "NRG Stadium, Houston", "is_tbd": True},
-        {"id": "wc26_r16_m11", "home_team": "1K", "away_team": "2L", "commence_time": t(25, 23), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "MetLife Stadium, NJ", "is_tbd": True},
-        {"id": "wc26_r16_m12", "home_team": "1L", "away_team": "2K", "commence_time": t(25, 2), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "SoFi Stadium, LA", "is_tbd": True},
-        {"id": "wc26_r16_m13", "home_team": "1D", "away_team": "2C", "commence_time": t(26, 23), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "AT&T Stadium, Dallas", "is_tbd": True},
-        {"id": "wc26_r16_m14", "home_team": "1G", "away_team": "2H", "commence_time": t(26, 2), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "Hard Rock Stadium, Miami", "is_tbd": True},
-        {"id": "wc26_r16_m15", "home_team": "1A", "away_team": "2B", "commence_time": t(27, 23), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "Estadio Akron, GDL", "is_tbd": True},
-        {"id": "wc26_r16_m16", "home_team": "1B", "away_team": "2F", "commence_time": t(27, 2), "group": None, "stage": "Round of 16", "matchday": 4, "venue": "BMO Field, Toronto", "is_tbd": True},
+        # ============ OCTAVOS DE FINAL / ROUND OF 16 (4 jul - 7 jul) ============
+        # Día 23 — 4 jul
+        {"id": "wc26_r16_m1", "home_team": "España", "away_team": "México", "commence_time": t(23, 18), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "Estadio Azteca, CDMX"},
+        {"id": "wc26_r16_m2", "home_team": "Argentina", "away_team": "Francia", "commence_time": t(23, 21), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "MetLife Stadium, NJ"},
+        
+        # Día 24 — 5 jul
+        {"id": "wc26_r16_m3", "home_team": "Brasil", "away_team": "Alemania", "commence_time": t(24, 18), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "Hard Rock Stadium, Miami"},
+        {"id": "wc26_r16_m4", "home_team": "Inglaterra", "away_team": "Uruguay", "commence_time": t(24, 21), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "SoFi Stadium, LA"},
+
+        # Día 25 — 6 jul
+        {"id": "wc26_r16_m5", "home_team": "Croacia", "away_team": "Marruecos", "commence_time": t(25, 18), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "Levi's Stadium, SF"},
+        {"id": "wc26_r16_m6", "home_team": "Dinamarca", "away_team": "Canadá", "commence_time": t(25, 21), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "BC Place, Vancouver"},
+
+        # Día 26 — 7 jul
+        {"id": "wc26_r16_m7", "home_team": "Portugal", "away_team": "Colombia", "commence_time": t(26, 18), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "AT&T Stadium, Dallas"},
+        {"id": "wc26_r16_m8", "home_team": "Países Bajos", "away_team": "Italia", "commence_time": t(26, 21), "group": None, "stage": "Round of 16", "matchday": 5, "venue": "NRG Stadium, Houston"},
+
+        # ============ CUARTOS DE FINAL / QUARTER-FINALS (9 jul - 11 jul) ============
+        {"id": "wc26_qf_m1", "home_team": "España", "away_team": "Argentina", "commence_time": t(28, 18), "group": None, "stage": "Quarter-finals", "matchday": 6, "venue": "Hard Rock Stadium, Miami"},
+        {"id": "wc26_qf_m2", "home_team": "Brasil", "away_team": "Inglaterra", "commence_time": t(29, 21), "group": None, "stage": "Quarter-finals", "matchday": 6, "venue": "SoFi Stadium, LA"},
+        {"id": "wc26_qf_m3", "home_team": "Marruecos", "away_team": "Canadá", "commence_time": t(30, 18), "group": None, "stage": "Quarter-finals", "matchday": 6, "venue": "MetLife Stadium, NJ"},
+        {"id": "wc26_qf_m4", "home_team": "Portugal", "away_team": "Países Bajos", "commence_time": t(30, 21), "group": None, "stage": "Quarter-finals", "matchday": 6, "venue": "AT&T Stadium, Dallas"},
+
+        # ============ SEMIFINALES / SEMI-FINALS (14 jul - 15 jul) ============
+        {"id": "wc26_sf_m1", "home_team": "Argentina", "away_team": "Brasil", "commence_time": t(33, 20), "group": None, "stage": "Semi-finals", "matchday": 7, "venue": "MetLife Stadium, NJ"},
+        {"id": "wc26_sf_m2", "home_team": "Canadá", "away_team": "Portugal", "commence_time": t(34, 20), "group": None, "stage": "Semi-finals", "matchday": 7, "venue": "SoFi Stadium, LA"},
+
+        # ============ FINAL (19 jul) ============
+        {"id": "wc26_final", "home_team": "Argentina", "away_team": "Portugal", "commence_time": t(38, 20), "group": None, "stage": "Final", "matchday": 8, "venue": "MetLife Stadium, NJ"}
     ]
 
     return matches

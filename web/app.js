@@ -188,7 +188,7 @@ function renderMatchCard(match) {
   // Etiquetas de grupo/fase si están disponibles
   const groupLabel = match.group ? `<span class="group-tag">Grupo ${match.group}</span>` : '';
   const stageLabel = match.stage && match.stage !== 'Group'
-    ? `<span class="stage-tag">${match.stage === 'Round of 16' ? 'Octavos' : match.stage}</span>`
+    ? `<span class="stage-tag">${match.stage === 'Round of 16' ? 'Octavos' : (match.stage === 'Round of 32' ? 'Dieciseisavos' : match.stage)}</span>`
     : '';
 
   card.innerHTML = `
@@ -402,6 +402,7 @@ function renderMatchDetail(data) {
   if (stageEl) {
     let stageText = '';
     if (match.group) stageText = `Grupo ${match.group}`;
+    else if (match.stage === 'Round of 32') stageText = 'Dieciseisavos de Final';
     else if (match.stage === 'Round of 16') stageText = 'Octavos de Final';
     else if (match.stage === 'Quarter-finals') stageText = 'Cuartos de Final';
     else if (match.stage === 'Semi-finals') stageText = 'Semifinal';
