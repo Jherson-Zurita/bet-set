@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Análisis detallado de partido con cuotas, edge por mercado y recomendación AI.">
+  <meta name="theme-color" content="#0a0e17">
+  <title>Detalle de Partido — Value Bet Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+<body>
+
+  <div class="detail-container" id="detail-app">
+    
+    <!-- Back Link -->
+    <a href="/" class="back-link" id="back-link">
+      ← Volver a partidos
+    </a>
+
+    <!-- Loading State -->
+    <div id="detail-loading">
+      <div class="skeleton skeleton-card" style="height: 200px;"></div>
+      <div class="skeleton skeleton-card" style="height: 150px; margin-top: 16px;"></div>
+      <div class="skeleton skeleton-card" style="height: 200px; margin-top: 16px;"></div>
+    </div>
+
+    <!-- Detail Content (hidden until loaded) -->
+    <div id="detail-content" style="display: none;">
+      
+      <!-- Header -->
+      <div class="detail-header">
+        <div class="detail-competition" id="detail-competition">FIFA World Cup 2026</div>
+        <div class="detail-teams">
+          <div class="detail-team">
+            <div class="detail-team-flag" id="home-flag">🏠</div>
+            <div class="detail-team-name" id="home-name">Local</div>
+          </div>
+          <div class="detail-vs">VS</div>
+          <div class="detail-team">
+            <div class="detail-team-flag" id="away-flag">✈️</div>
+            <div class="detail-team-name" id="away-name">Visitante</div>
+          </div>
+        </div>
+        <div class="detail-time" id="detail-time">—</div>
+        <div class="detail-stage" id="detail-stage"></div>
+      </div>
+
+      <!-- Pending Notice (oculto por defecto, se muestra si no hay cuotas) -->
+      <div id="pending-notice" class="pending-notice" style="display: none;">
+        <div class="pending-icon">⏳</div>
+        <div class="pending-content">
+          <div class="pending-title">Cuotas no disponibles aún</div>
+          <div class="pending-text">Las casas de apuestas aún no han publicado cuotas para este partido. El análisis AI y los edges se activarán cuando estén disponibles.</div>
+        </div>
+      </div>
+
+      <!-- Recommendation Box (only if value bet) -->
+      <div id="recommendation-container" style="display: none;">
+        <div class="recommendation-box">
+          <div class="rec-header">
+            <span class="rec-icon">🎯</span>
+            <span class="rec-title">Apuesta Recomendada</span>
+          </div>
+          <div class="rec-details">
+            <div class="rec-item">
+              <span class="rec-item-label">Mercado</span>
+              <span class="rec-item-value" id="rec-market">—</span>
+            </div>
+            <div class="rec-item">
+              <span class="rec-item-label">Selección</span>
+              <span class="rec-item-value" id="rec-selection">—</span>
+            </div>
+            <div class="rec-item">
+              <span class="rec-item-label">Cuota bet365</span>
+              <span class="rec-item-value" id="rec-odds">—</span>
+            </div>
+            <div class="rec-item">
+              <span class="rec-item-label">Edge</span>
+              <span class="rec-item-value" id="rec-edge" style="color: var(--green-400);">—</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Copy Bet Button -->
+        <button class="copy-bet-btn" id="copy-bet-btn">
+          📋 Copiar Apuesta
+        </button>
+      </div>
+
+      <!-- Markets Section -->
+      <div class="markets-section" id="markets-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="icon">📊</span>
+            Cuotas por Mercado
+          </h2>
+        </div>
+        <div id="markets-container"></div>
+      </div>
+
+      <!-- AI Analysis Section -->
+      <div class="ai-section" id="ai-section">
+        <div class="ai-card">
+          <div class="ai-header" id="ai-toggle-header">
+            <div class="ai-header-left">
+              <div class="ai-icon">🤖</div>
+              <div>
+                <div class="ai-title">Análisis AI</div>
+                <div class="ai-subtitle">Powered by Gemini</div>
+              </div>
+            </div>
+            <span class="ai-toggle" id="ai-toggle-icon">▼</span>
+          </div>
+          <div class="ai-body" id="ai-body">
+            <p class="ai-analysis-text" id="ai-text">Cargando análisis...</p>
+            <div class="ai-factors" id="ai-factors"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats-section" id="stats-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="icon">📈</span>
+            Estadísticas
+          </h2>
+        </div>
+        <div class="stats-grid" id="stats-grid"></div>
+        <div class="insights-list" id="insights-list"></div>
+      </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="detail-error" style="display: none;">
+      <div class="error-state">
+        <div class="error-icon">❌</div>
+        <p class="error-text" id="error-message">Error al cargar el partido</p>
+        <button class="retry-btn" onclick="loadMatchDetail()">Reintentar</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p class="footer-text">Value Bet Finder v1.0 · Mundial 2026</p>
+      <p class="footer-warning">
+        ⚠️ Las apuestas conllevan riesgo. Apuesta solo lo que puedas permitirte perder.
+      </p>
+    </footer>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

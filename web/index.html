@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Value Bet Finder — Detecta apuestas de valor comparando cuotas de bet365 vs Pinnacle. Análisis AI en tiempo real para el Mundial 2026.">
+  <meta name="theme-color" content="#0a0e17">
+  <title>Value Bet Finder — Apuestas de Valor en Tiempo Real</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+<body>
+
+  <div class="app-container" id="app">
+    
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-section">
+        <div class="logo-icon">💎</div>
+        <div class="logo-text">
+          <h1 class="logo-title">Value Bet Finder</h1>
+          <span class="logo-subtitle">Apuestas Inteligentes</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="header-badge" id="status-badge">
+          <span class="dot"></span>
+          <span id="status-text">Conectado</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar" id="stats-bar">
+      <div class="stat-card">
+        <div class="stat-value blue" id="stat-matches">—</div>
+        <div class="stat-label">Partidos</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value green" id="stat-valuebets">—</div>
+        <div class="stat-label">Value Bets</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value yellow" id="stat-bestedge">—</div>
+        <div class="stat-label">Mejor Edge</div>
+      </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs" id="filter-tabs">
+      <button class="filter-tab active" data-filter="all" id="filter-all">🏟️ Todos</button>
+      <button class="filter-tab" data-filter="value" id="filter-value">💎 Value Bets</button>
+      <button class="filter-tab" data-filter="excellent" id="filter-excellent">🟢 Excelente</button>
+      <button class="filter-tab" data-filter="good" id="filter-good">🟢 Buena</button>
+      <button class="filter-tab" data-filter="acceptable" id="filter-acceptable">🟡 Aceptable</button>
+    </div>
+
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="icon">⚽</span>
+        Partidos de Hoy
+      </h2>
+      <span class="section-count" id="matches-count">0</span>
+    </div>
+
+    <!-- Matches Grid -->
+    <div class="matches-grid" id="matches-grid">
+      <!-- Loading skeletons -->
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+      <div class="skeleton skeleton-card"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p class="footer-text">
+        Value Bet Finder v1.0 · Mundial 2026<br>
+        Datos de cuotas vía The Odds API · Análisis con Gemini AI
+      </p>
+      <p class="footer-warning">
+        ⚠️ Las apuestas conllevan riesgo. Apuesta solo lo que puedas permitirte perder.
+      </p>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
