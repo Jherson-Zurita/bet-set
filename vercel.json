@@ -12,8 +12,12 @@
   ],
   "routes": [
     {
+      "src": "/api/value-bets",
+      "dest": "/api/value_bets.py"
+    },
+    {
       "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "/api/$1.py"
     },
     {
       "src": "/match(.*)",
